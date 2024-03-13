@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SignUp PAGE</title>
+    <title>LOGIN PAGE</title>
     <link rel="shortcut icon" href="./icons/eco.png" type="image/x-icon">
     <style>
         body {
@@ -22,31 +21,28 @@
             background-color: rgb(255, 255, 255);
             border-radius: 5px;
         }
-
         .btn {
             width: 242px;
             margin-top: 20px;
             padding: 10px 19px;
             border: none;
             border-radius: 10px;
-            background-color: green;
+            background-color: rgb(70, 102, 243);
             color: white;
         }
-
         .btn:hover {
-            background-color: rgb(16, 102, 187);
-            color: black;
+            background-color: green;
         }
         .ip {
             width: 242px;
             height: 31px;
             border-radius: 3px;
         }
-        .login, a{
+        .signup, a{
             text-decoration: none;
-            color: rgb(67, 104, 249);
-        }  
-        a:hover{
+            color: blue;
+        }
+       a:hover{
         text-decoration: underline;
         color: rgb(255, 0, 0);
 
@@ -54,37 +50,29 @@
        a:active{
      color: rgb(60, 240, 60);
      text-decoration: underline;
-       }    
-       #msg{
-        color: rgba(0, 176, 0, 0.683);
-        margin: 0px;
-        display: none;
-       }  
+       }     
     </style>
 </head>
-
 <body>
     <div class="main">
         <div class="sub">
-            <form action="">
-                <h1>SignUp</h1>
-                <input type="text" id="user" class="ip" placeholder="Email Or Number" required autofocus title="Enter your E-mail Id Or Number here"><br><br>
-                <input type="password" id="pass" class="ip" placeholder="Create Password" required maxlength="4" title="Enter 4 digit password"><br><br>
-                <input type="password" id="pass" class="ip" placeholder="Confirm Password" required maxlength="4" title="Enter 4 digit password"><br><br>
-                <!-- <p id="msg" onclick="fun()">Successfull registered....</p> -->
-                <a href="./loginpage.html" target="_blank"><input type="button"value="SignUp" class="btn" id="bttn"></a> <br><br>
-                <span>Already have an account? <a href="./loginpage.html" class="login">Login</a></span>
-
+            <form action="" >
+                <h1>Login</h1>
+                 <p id="demo" onclick="fun()"></p>
+                <input type="text" id="user" class="ip" required placeholder="Email Or Number" autofocus title="Please Enter your ID Or Number"><br><br>
+                <input type="password" id="pass" class="ip" required placeholder="Password" maxlength="4" title="Please Enter your passwordss"><br><br>
+                <a href="./index.html">forgot password?</a>
+                <a href="./mainpage.html" target="_blank"><input type="button"value="Login" class="btn" id="bttn"></a> <br><br>
+                <span>Don't have an account? <a href="./index.html" class="signup">SignUp</a></span>
             </form>
-
         </div>
     </div>
- 
     <script>
         let btn=document.getElementById("bttn");
         btn.addEventListener('click', function fun(){
-            alert("Do you want to sign Up...?")
+            alert("Do you want to Login...");
         });
+       
     </script>
 </body>
 
