@@ -1,1 +1,79 @@
-<p>hello everyone..!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN PAGE</title>
+    <link rel="shortcut icon" href="./icons/eco.png" type="image/x-icon">
+    <style>
+        body {
+            background-color: rgb(2, 95, 193);
+        }
+        .main{
+            margin-top: 80px;
+        }       
+        .sub {
+            text-align: center;
+            padding-top: 5px;
+            width: 330px;
+            height: 400px;
+            margin: auto;
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+        }
+        .btn {
+            width: 242px;
+            margin-top: 20px;
+            padding: 10px 19px;
+            border: none;
+            border-radius: 10px;
+            background-color: rgb(70, 102, 243);
+            color: white;
+        }
+        .btn:hover {
+            background-color: green;
+        }
+        .ip {
+            width: 242px;
+            height: 31px;
+            border-radius: 3px;
+        }
+        .signup, a{
+            text-decoration: none;
+            color: blue;
+        }
+       a:hover{
+        text-decoration: underline;
+        color: rgb(255, 0, 0);
+
+       }
+       a:active{
+     color: rgb(60, 240, 60);
+     text-decoration: underline;
+       }     
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sub">
+            <form action="" >
+                <h1>Login</h1>
+                 <p id="demo" onclick="fun()"></p>
+                <input type="text" id="user" class="ip" required placeholder="Email Or Number" autofocus title="Please Enter your ID Or Number"><br><br>
+                <input type="password" id="pass" class="ip" required placeholder="Password" maxlength="4" title="Please Enter your passwordss"><br><br>
+                <a href="./9jan-signup.html">forgot password?</a>
+                <a href="./9jan_assignpro.html" target="_blank"><input type="button"value="Login" class="btn" id="bttn"></a> <br><br>
+                <span>Don't have an account? <a href="./9jan-signup.html" class="signup">SignUp</a></span>
+            </form>
+        </div>
+    </div>
+    <script>
+        let btn=document.getElementById("bttn");
+        btn.addEventListener('click', function fun(){
+            alert("Do you want to Login...");
+        });
+       
+    </script>
+</body>
+
+</html>
